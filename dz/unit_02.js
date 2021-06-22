@@ -35,7 +35,6 @@ let memory = {
 //Task 3.
 // Представим себе ситуацию, что мы начали использовать данные объекты на странице и поняли что нам не хватает изображения. Добавим свойство image в объект cpu. Поскольку, memory наследуется cpu то данное свойство появится и у него. Просто дописываем данное свойство в cpu.
 cpu.image = '';
-console.log(cpu);
 // Task 4. 
 // Добавьте в свойство image для cpu ссылку
 // https://i2.rozetka.ua/goods/1865699/copy_amd_fx_series_fx_9590_fd9590fhhkwof_58abf05e14fdc_58abfc46c2b65_58abff06c94bd_images_1865699744.jpg
@@ -49,4 +48,6 @@ let p = 5;
 cpu.sale = function () {
     return this.amount - (p*this.amount/100);
 }
+console.log(cpu.sale(p));
+console.log(memory.sale(p));
 
