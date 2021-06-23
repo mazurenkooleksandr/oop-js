@@ -14,9 +14,9 @@ class Button {
         button.style.height = this.height + 'px';
         button.style.background = this.background;
         button.textContent = this.value;
-        body.appendChild(button);
+        return body.appendChild(button);
     }
 }
 
-let simpleButton = new Button (200, 100, 'red', 'click');
+let simpleButton = new Button (194.4, 70.2, 'red', 'click');
 simpleButton.render();

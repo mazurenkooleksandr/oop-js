@@ -5,8 +5,9 @@ class ModernButton extends Button {
     }
 
     render() {
-       console.log(super.render()); 
-       //button.style.borderRadius = this.borderRadius + 'px';
+       let button = super.render(); 
+       button.style.borderRadius = this.borderRadius + 'px';
+       return button;
     }
 }
 
