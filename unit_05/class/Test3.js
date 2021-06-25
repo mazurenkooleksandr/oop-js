@@ -1,6 +1,6 @@
 class Test3 extends Test2 {
     set testProp2(a) {
-        super.testProp();
+        super.testProp(a);
     }
 
     setTestProp() {
